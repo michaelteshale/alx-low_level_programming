@@ -1,3 +1,4 @@
+#!/bin/bash
 #include <stdio.h>
 /**
 *Use the function puts
