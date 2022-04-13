@@ -1,8 +1,8 @@
-#include "main.h"
+#include "holberton.h"
 /**
- *Write a function that checks for lowercase character
- *Returns 1 if c is lowercase
- *Returns 0 otherwise
+ * _islower - a function that checks for lowercase character
+ * @c: single letter input
+ * Return: 1 if int c is lowercase, 0 if otherwise
  */
 int _islower(int c)
 {
