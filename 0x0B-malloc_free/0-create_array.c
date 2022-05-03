@@ -1,31 +1,14 @@
-#include "notrebloh.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
- * create_array - create an arry of size with char c
- * @size: unsigned int type
- * @c: char type
- * Return: Return pointer to array created
+ * malloc_checked - allocates memory using malloc
+ * @b: unsigned int of amount of needed memory
+ * Return: void
  */
-char *create_array(unsigned int size, char c)
+void *malloc_checked(unsigned int b)
 {
-char *s;
-unsigned int i;
-if (size == 0)
-{
-return (NULL);
-}
-s = malloc((size) * sizeof(char));
-if (s == NULL)
-{
-return (NULL);
-}
-i = 0;
-while (i < size)
-{
-s[i] = c;
-i++;
-}
-s[i] = '\0';
-return (s);
+void *p;
+p = malloc(b);
+if (p == NULL)
+exit(98);
+return (p);
 }
