@@ -111,7 +111,7 @@ exit(98);
 num = (*mult - '0') * digit;
 num += tens;
 *prod = (num % 10) + '0';
-ens = num / 10;
+tens = num / 10;
 }
 if (tens)
 *prod = (tens % 10) + '0';
@@ -171,8 +171,9 @@ exit(98);
 if (*(argv[1]) == '0')
 argv[1] = iterate_zeroes(argv[1]);
 if (*(argv[2]) == '0')
-rgv[2] = iterate_zeroes(argv[2]);
+argv[2] = iterate_zeroes(argv[2]);
 if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
+{
 printf("0\n");
 return (0);
 }
@@ -188,7 +189,7 @@ add_nums(final_prod, next_prod, size - 1);
 for (index = 0; final_prod[index]; index++)
 {
 if (final_prod[index] != 'x')
-char(final_prod[index]);
+putchar(final_prod[index]);
 }
 putchar('\n');
 free(next_prod);
