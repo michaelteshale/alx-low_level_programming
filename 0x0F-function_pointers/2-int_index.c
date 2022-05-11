@@ -13,7 +13,7 @@ int i = 0;
 if (size > 0)
 {
 if (array != NULL && cmp != NULL)
-{	  
+{
 while (i < size)
 {
 if (cmp(array[i]))
